@@ -15,7 +15,7 @@ import { Hero } from '../hero';
 })
 export class HeroDetailComponent implements OnInit {
   hero$: Observable<Hero>;
-  
+
   constructor(
     private route: ActivatedRoute,
   private router: Router,
@@ -27,6 +27,9 @@ export class HeroDetailComponent implements OnInit {
       switchMap((params: ParamMap) =>
         this.service.getHero(params.get('id')))
     );
+  }
+  gotoHeroes() {
+    this.router.navigate(['/heroes']);
   }
 
 }
