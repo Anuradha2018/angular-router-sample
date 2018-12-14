@@ -18,8 +18,8 @@ export class HeroDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-  private router: Router,
-  private service: HeroService
+    private router: Router,
+    private service: HeroService
   ) { }
 
   ngOnInit() {

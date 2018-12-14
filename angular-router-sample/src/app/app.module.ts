@@ -9,25 +9,25 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule } from './heroes/heroes.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-@NgModule({
-  imports: [
-    BrowserAnimationsModule,
-  ],
-})
+import { CrisisCenterComponent } from './crisis-center/crisis-center/crisis-center.component';
+import { CrisisCenterHomeComponent } from './crisis-center/crisis-center-home/crisis-center-home.component';
+import { CrisisDetailComponent } from './crisis-center/crisis-detail/crisis-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CrisisListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CrisisCenterComponent,
+    CrisisCenterHomeComponent,
+    CrisisDetailComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HeroesModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
