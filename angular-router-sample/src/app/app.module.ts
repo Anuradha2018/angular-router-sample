@@ -14,6 +14,7 @@ import { CrisisCenterComponent } from './crisis-center/crisis-center/crisis-cent
 import { CrisisCenterHomeComponent } from './crisis-center/crisis-center-home/crisis-center-home.component';
 import { CrisisDetailComponent } from './crisis-center/crisis-detail/crisis-detail.component';
 import { CrisisCenterModule }      from './crisis-center/crisis-center.module';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CrisisCenterModule }      from './crisis-center/crisis-center.module';
     PageNotFoundComponent,
     CrisisCenterComponent,
     CrisisCenterHomeComponent,
-    CrisisDetailComponent
+    CrisisDetailComponent,
+    ComposeMessageComponent
   ],
   imports: [
     CommonModule,
