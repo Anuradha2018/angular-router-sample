@@ -15,6 +15,7 @@ import { CrisisCenterHomeComponent } from './crisis-center/crisis-center-home/cr
 import { CrisisDetailComponent } from './crisis-center/crisis-detail/crisis-detail.component';
 import { CrisisCenterModule }      from './crisis-center/crisis-center.module';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ComposeMessageComponent } from './compose-message/compose-message.compo
     CrisisCenterComponent,
     CrisisCenterHomeComponent,
     CrisisDetailComponent,
-    ComposeMessageComponent
+    ComposeMessageComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
