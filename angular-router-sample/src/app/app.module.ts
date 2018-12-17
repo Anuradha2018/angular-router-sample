@@ -18,13 +18,16 @@ import { AuthModule }              from './auth/auth.module';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    HeroesModule,
+    HeroesModule,// order matters:  If you list AppRoutingModule first, 
+    //the wildcard route will be registered before the hero routes. 
+    //The wildcard route—which matches every URL—will intercept the attempt to 
+    // navigate to a hero route.
     AuthModule,
     AppRoutingModule,
   ],
   declarations: [
     AppComponent,
-    ComposeMessageComponent,
+    ComposeMessageComponent, 
     PageNotFoundComponent
   ],
   bootstrap: [ AppComponent ]

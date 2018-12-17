@@ -13,7 +13,12 @@ const heroesRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forChild(heroesRoutes)
+    RouterModule.forChild(heroesRoutes) // Only call RouterModule.forRoot in the 
+                                          //root AppRoutingModule (or the AppModule 
+                                          // if that's where you register top level 
+                                          // application routes). 
+                                          // In any other module, you must call the RouterModule.forChild 
+                                          // method to register additional routes.
   ],
   exports: [
     RouterModule
